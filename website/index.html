@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="header"></div>
+
+        <div class="grid">
+            <div class="row1">
+                <h1 class="item1">Learn to code by <br> watching others</h1>
+                <p class="description">See how experienced developers solve problems in real-time. <br>
+                    Watching scripted tutorials is great, but understanding how <br>
+                    developers think is invaluable</p>
+            </div>
+
+            <div class="row2">
+                <div class="try-now">
+                    <p><span>Try it for free 7 days</span> then <br> 20$/mo. thereafter</p>
+                </div>
+                
+                <div class="form">
+                    <form action="" name="main-form" onsubmit="return validateForm()" method="POST" novalidate>
+                        <div class="input fname">
+                            <input type="text" name="fname" id="fname" placeholder="First Name" onblur="return outFocus(name)" oninput="return changeValue(name)">
+                            <img src="../images/icon-error.svg" alt="" id="fnameError">
+                        </div>
+                        <p id="fnameText"></p>
+                        <div class="input lname">
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" onblur="return outFocus(name)" oninput="return changeValue(name)">
+                            <img src="../images/icon-error.svg" alt="" id="lnameError">
+                        </div>
+                        <p id="lnameText"></p>
+                        <div class="input email">
+                            <input type="email" name="email" id="email" placeholder="Email Address" onblur="return outFocus(name)" oninput="return changeValue(name)">
+                            <img src="../images/icon-error.svg" alt="" id="emailError">
+                        </div>
+                        <p id="emailText"></p>
+                        <div class="input pass">
+                            <input type="password" name="pass" id="pass" placeholder="Password" onblur="return outFocus(name)" oninput="return changeValue(name)">  
+                            <img src="../images/icon-error.svg" alt="" id="passError">
+                        </div>
+                        <p id="passText"></p>
+                        <input type="submit" value="CLAIM YOUR FREE TRAIL">
+                        
+                    </form>
+                    <p style="color: hsl(246, 25%, 77%); text-align: center; font-weight: 600;">By clicking the button you are agreeing to<br> our <span style="color: hsl(0, 100%, 74%) ; font-weight: 700;">Terms and Services</span></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
